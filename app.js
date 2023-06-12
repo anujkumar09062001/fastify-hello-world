@@ -6,7 +6,7 @@ const fastify = require('fastify')({
 })
 
 try {
-  mongoose.connect('mongodb+srv://xyz:xyz@cluster0.reo0yux.mongodb.net/fastify')
+  mongoose.connect("mongodb+srv://xyz:xyz@cluster0.reo0yux.mongodb.net/Fastify?retryWrites=true&w=majority")
   console.log("Connected to mongodb")
 } catch (error) {
   console.log("Failed to connect to mongodb")
