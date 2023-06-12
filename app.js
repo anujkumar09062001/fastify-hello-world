@@ -6,7 +6,7 @@ const fastify = require('fastify')({
 })
 
 fastify.get('/', function (request, reply) {
-  reply.type('text/html').send(html)
+  reply.send("Hello")
 })
 
 fastify.listen({host: host, port: port }, function (err, address) {
