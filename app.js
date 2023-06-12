@@ -12,14 +12,14 @@ try {
   console.log("Failed to connect to mongodb")
 }
 
-// fastify.get('/', function (request, reply) {
-//   reply.send("Hello!")
-// })
+fastify.get('/', function (request, reply) {
+  reply.send("Hello!")
+})
 // const app = fastify
-const userRoute = require('./route/user.jsx');
+// const userRoute = require('./route/user.jsx');
 // app.register(userRoute)
 
-fastify.register(userRoute, {prefix: "/"})
+// fastify.register(userRoute, {prefix: "/"})
 
 
 fastify.listen({ port: port }, function (err, address) {
